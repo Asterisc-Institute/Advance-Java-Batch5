@@ -32,3 +32,10 @@
 0:0:0:0:0:0:0:1 - - [08/May/2023:17:46:11 +0530] "GET /Session-Day03/profile?uname=geeta&upass=123 HTTP/1.1" 200 187
 0:0:0:0:0:0:0:1 - - [08/May/2023:17:46:22 +0530] "GET /Session-Day03/home?uname=geeta&upass=123 HTTP/1.1" 200 186
 0:0:0:0:0:0:0:1 - - [08/May/2023:17:46:31 +0530] "GET /Session-Day03/home?uname=pooja&upass=123 HTTP/1.1" 200 186
+127.0.0.1 - - [08/May/2023:17:51:52 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [08/May/2023:17:51:52 +0530] "GET /Session-Day04/ HTTP/1.1" 200 287
+0:0:0:0:0:0:0:1 - - [08/May/2023:17:51:55 +0530] "GET /Session-Day04/home?uname=geeta&upass=abc HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [08/May/2023:17:52:01 +0530] "GET /Session-Day04/profile?uname=geeta&upass=abc HTTP/1.1" 200 77
+0:0:0:0:0:0:0:1 - - [08/May/2023:17:52:07 +0530] "GET /Session-Day04/about?uname=geeta&upass=abc HTTP/1.1" 404 989
+0:0:0:0:0:0:0:1 - - [08/May/2023:18:04:01 +0530] "GET /Session-Day04/home?uname=geeta&upass=abc HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [08/May/2023:18:05:08 +0530] "GET /Session-Day04/profile?uname=geeta&upass=abc HTTP/1.1" 200 77
