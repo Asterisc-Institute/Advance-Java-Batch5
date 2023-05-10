@@ -45,3 +45,7 @@
 0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:03 +0530] "GET /Session-Day03/home HTTP/1.1" 200 186
 0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:07 +0530] "GET /Session-Day03/profile?uname=null&upass=null HTTP/1.1" 200 187
 0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:08 +0530] "GET /Session-Day03/about?uname=null&upass=null HTTP/1.1" 404 989
+127.0.0.1 - - [09/May/2023:18:01:42 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:42 +0530] "GET /Session-Day04/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:51 +0530] "GET /Session-Day04/profile HTTP/1.1" 200 77
+0:0:0:0:0:0:0:1 - - [09/May/2023:18:01:54 +0530] "GET /Session-Day04/about?uname=null&upass=null HTTP/1.1" 404 989
