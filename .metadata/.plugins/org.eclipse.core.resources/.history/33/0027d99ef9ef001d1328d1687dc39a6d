@@ -1,0 +1,28 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class UserDao {
+	
+	String driver="com.mysql.jdbc.Driver";
+	String db_name="batch5";
+	String db_url="jdbc:mysql://localhost:3306/"+db_name;
+	String db_uname="root";
+	String db_upass="abc123";
+	
+	
+	Connection getConnect()
+	{
+		Class.forName(driver);
+		Connection con=DriverManager.getConnection(db_url,db_uname,db_upass);
+	return con;
+	}
+	
+	
+	
+	
+	
+	
+
+}

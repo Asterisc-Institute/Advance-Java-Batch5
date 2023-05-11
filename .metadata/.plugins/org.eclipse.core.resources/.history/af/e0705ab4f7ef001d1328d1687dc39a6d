@@ -1,0 +1,41 @@
+package service;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import model.User;
+
+
+@WebServlet("/RegiterServ")
+public class RegiterServ extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		String fname=request.getParameter("fname");
+		String uname=request.getParameter("uname");
+		String email=request.getParameter("email");
+		String mob=request.getParameter("mob");
+		String upass=request.getParameter("upass");
+		String cpass=request.getParameter("cpass");
+		String gender=request.getParameter("gender");
+		
+		
+		User u=new User(fname, uname, email, mob, upass, cpass, gender);
+	
+		out.print(u);
+		System.out.println("Date :"+u);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

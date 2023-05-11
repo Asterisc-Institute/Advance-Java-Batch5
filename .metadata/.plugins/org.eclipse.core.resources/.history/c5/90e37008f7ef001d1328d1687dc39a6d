@@ -1,0 +1,11 @@
+package model;
+
+public class User {
+	private String fname;
+	private String uname;
+	private String email;
+	private String mob;
+	private String upass;
+	private String cpass;
+	private String gender;
+}
