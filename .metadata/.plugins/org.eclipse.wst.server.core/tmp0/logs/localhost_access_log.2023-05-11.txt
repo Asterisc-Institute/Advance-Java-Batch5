@@ -39,3 +39,6 @@
 0:0:0:0:0:0:0:1 - - [11/May/2023:18:23:36 +0530] "GET /Project01/ HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [11/May/2023:18:23:36 +0530] "GET /Project01/css/style.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [11/May/2023:18:23:49 +0530] "GET /Project01/regServ?fname=geeta&uname=admin&email=ram%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 110
+127.0.0.1 - - [11/May/2023:18:24:56 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [11/May/2023:18:25:08 +0530] "GET /Project01/regServ?fname=ram&uname=admin&email=ram%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 136
+0:0:0:0:0:0:0:1 - - [11/May/2023:18:25:48 +0530] "GET /Project01/regServ?fname=geeta&uname=admin&email=geeta%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 140
