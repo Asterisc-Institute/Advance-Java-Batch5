@@ -3,6 +3,7 @@ package model;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserDao {
@@ -37,6 +38,20 @@ public class UserDao {
 		con.close();//s5
 		return a;
 		
+	}
+
+	public boolean checkUser(String email) throws ClassNotFoundException, SQLException {
+		String sql="select * from user_tbl where email=?";
+		Connection con=getConnect();
+		PreparedStatement ps=con.prepareStatement(sql);//s3
+		ps.setString(1, email);
+		ResultSet rs =ps.executeQuery();//s4
+		
+		boolean a=rs.absolute(1);
+
+		con.close();//s5
+		
+		return a;
 	}
 	
 	

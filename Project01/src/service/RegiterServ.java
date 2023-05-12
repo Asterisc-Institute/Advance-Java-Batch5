@@ -39,11 +39,29 @@ public class RegiterServ extends HttpServlet {
 		
 		try {
 			
-			int a=db.save(u);
-			if(a>0)
-				out.print("<br/><br/>Data Inserted<br/>");
+			if(!db.checkUser(email))
+			{
+			
+			
+			try {
+				
+				int a=db.save(u);
+				if(a>0)
+					out.print("<br/><br/>Data Inserted<br/>");
+				else
+					out.print("<br/><br/>Data Not Inserted<br/>");
+			} catch (ClassNotFoundException | SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			}
 			else
-				out.print("<br/><br/>Data Not Inserted<br/>");
+			{
+				out.print("<br/><br/>User Already Register<br/>");
+			}
+			
+			
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
