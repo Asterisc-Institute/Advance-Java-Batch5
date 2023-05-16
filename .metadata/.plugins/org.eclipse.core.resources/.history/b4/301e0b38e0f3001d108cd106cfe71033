@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div class="container">
+    <div class="title">Login Page</div>
+    <div class="content">
+      <form action="regServ" >
+        <div class="user-details">
+ 
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+       
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="upass" placeholder="Enter your password" required>
+          </div>
+         
+        </div>
+   
+        <div class="button">
+          <input type="submit" value="Login">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

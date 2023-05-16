@@ -4,3 +4,34 @@ May 05, 2023 18:18:02.74 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 
 May 09, 2023 17:46:05.98 NEW SESSION
 May 09, 2023 17:46:05.98 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+May 16, 2023 17:19:32.34 NEW SESSION
+May 16, 2023 17:19:32.34 [5092:8180:0516/171932.347:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:19:59.07 [5092:8180:0516/171959.079:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:20:51.51 [5092:8180:0516/172051.516:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:22:37.07 [5092:8180:0516/172237.070:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:26:35.34 [5092:8180:0516/172635.344:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:31:07.61 [5092:6596:0516/173107.613:ERROR:CONSOLE(1)] "Uncaught (in promise) SyntaxError: Unexpected token 'H', "HTTP/1.1 4"... is not valid JSON", source: devtools://devtools/bundled/devtools_app.html?remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@b6f521170062a1fa8a82c33fb223b06fec566da1/&can_dock=true&panel=elements&targetType=tab (1)
+May 16, 2023 17:33:46.84 [5092:8180:0516/173346.845:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:43:46.85 [5092:8180:0516/174346.858:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:44:28.27 [5760:2252:0516/174428.270:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:44:28.27 [5760:2252:0516/174428.271:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:28.27 [5760:2252:0516/174428.272:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:28.27 [5760:2252:0516/174428.272:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:28.60 [5760:2252:0516/174428.603:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:48.99 [5760:2252:0516/174448.996:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:55.23 [5760:2252:0516/174455.231:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:44:55.60 [5760:2252:0516/174455.608:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:57.72 [5760:2252:0516/174457.729:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:44:58.25 [5760:2252:0516/174458.252:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:45:34.49 [5760:2252:0516/174534.493:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:45:50.89 [5760:2252:0516/174550.894:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:45:55.18 [5760:2252:0516/174555.179:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:45:55.44 [5760:2252:0516/174555.449:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:45:57.25 [5760:2252:0516/174557.258:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:47:02.39 [5760:2252:0516/174702.390:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:47:24.91 [5760:2252:0516/174724.919:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:47:27.25 [5760:2252:0516/174727.256:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:47:29.97 [5760:2252:0516/174729.972:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 16, 2023 17:47:42.54 [5760:2252:0516/174742.546:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+May 16, 2023 17:49:45.78 [5760:2252:0516/174945.781:ERROR:registration_request.cc(251)] Registration URL fetching failed.

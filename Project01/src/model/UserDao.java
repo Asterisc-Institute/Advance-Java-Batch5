@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class UserDao {
 
@@ -53,7 +54,40 @@ public class UserDao {
 		
 		return a;
 	}
+
+	public boolean loginUser(String email, String upass) throws ClassNotFoundException, SQLException {
+		String sql="select * from user_tbl where email=? and upass=?";
+		Connection con=getConnect();
+		PreparedStatement ps=con.prepareStatement(sql);//s3
+		ps.setString(1, email);
+		ps.setString(2, upass);
+		ResultSet rs =ps.executeQuery();//s4
+		
+		boolean a=rs.absolute(1);
+
+		con.close();//s5
+		
+		return a;
+	}
 	
-	
+	public ArrayList<User> getAllUser() throws ClassNotFoundException, SQLException {
+		String sql="select * from user_tbl";
+		Connection con=getConnect();
+		PreparedStatement ps=con.prepareStatement(sql);//s3
+
+		ResultSet rs =ps.executeQuery();//s4
+		
+		ArrayList<User> ul=new ArrayList<>();
+		
+		while(rs.next())
+		{ //uid, fname, uname, email, mob, upass, gender
+			User u=new User(rs.getInt(1), rs.getString(2),  rs.getString(3),  rs.getString(4),  rs.getString(5),  rs.getString(6),  rs.getString(7));    
+			ul.add(u);
+		}
+
+		con.close();//s5
+		
+		return ul;
+	}
 	
 }

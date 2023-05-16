@@ -3,3 +3,9 @@
 0:0:0:0:0:0:0:1 - - [12/May/2023:17:49:40 +0530] "GET /favicon.ico HTTP/1.1" 404 973
 0:0:0:0:0:0:0:1 - - [12/May/2023:17:50:06 +0530] "GET /Project01/register_page.html HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [12/May/2023:17:52:16 +0530] "GET /Project01/regServ?fname=sham77253&uname=ram&email=ram%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Male HTTP/1.1" 200 28
+127.0.0.1 - - [12/May/2023:18:03:37 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [12/May/2023:18:04:07 +0530] "GET /Project01/regServ?fname=pooja22+maam&uname=admin5&email=ram%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 36
+0:0:0:0:0:0:0:1 - - [12/May/2023:18:04:32 +0530] "GET /Project01/regServ?fname=pooja22+maam&uname=admin5&email=ram2%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 28
+0:0:0:0:0:0:0:1 - - [12/May/2023:18:04:43 +0530] "GET /Project01/regServ?fname=pooja22+maam&uname=admin5&email=ram2%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 36
+0:0:0:0:0:0:0:1 - - [12/May/2023:18:04:49 +0530] "GET /Project01/regServ?fname=pooja22+maam&uname=admin5&email=geeta%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 36
+0:0:0:0:0:0:0:1 - - [12/May/2023:18:05:07 +0530] "GET /Project01/regServ?fname=pooja22+maam&uname=admin5&email=geeta99%40gmail.com&mob=999999999&upass=abc&cpass=aa&gender=Female HTTP/1.1" 200 28

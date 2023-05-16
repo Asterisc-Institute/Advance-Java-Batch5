@@ -43,6 +43,20 @@ public class User {
 		this.cpass = cpass;
 		this.gender = gender;
 	}
+	
+	
+	
+	public User(int uid, String fname, String uname, String email, String mob, String upass, String gender) {
+		super();
+		this.uid = uid;
+		this.fname = fname;
+		this.uname = uname;
+		this.email = email;
+		this.mob = mob;
+		this.upass = upass;
+		this.gender = gender;
+	}
+
 	public int getUid() {
 		return uid;
 	}
