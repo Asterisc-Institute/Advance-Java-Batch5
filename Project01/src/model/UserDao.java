@@ -89,5 +89,40 @@ public class UserDao {
 		
 		return ul;
 	}
-	
+
+	public ArrayList<User> getLimitedUser(int pId, int total) throws ClassNotFoundException, SQLException {
+		String sql="select * from user_tbl limit ?,?";
+		Connection con=getConnect();
+		PreparedStatement ps=con.prepareStatement(sql);//s3
+		ps.setInt(1, pId-1);
+		ps.setInt(2, total);
+
+		ResultSet rs =ps.executeQuery();//s4
+		
+		ArrayList<User> ul=new ArrayList<>();
+		
+		while(rs.next())
+		{ //uid, fname, uname, email, mob, upass, gender
+			User u=new User(rs.getInt(1), rs.getString(2),  rs.getString(3),  rs.getString(4),  rs.getString(5),  rs.getString(6),  rs.getString(7));    
+			ul.add(u);
+		}
+
+		con.close();//s5
+		
+		return ul;
+	}
+
+	public int deleteUser(int uid) throws ClassNotFoundException, SQLException {
+
+		String sql="delete from user_tbl where uid=?";
+		Connection con=getConnect();
+		PreparedStatement ps=con.prepareStatement(sql);//s3
+		ps.setInt(1, uid);
+		
+		int a =ps.executeUpdate();//s4
+		
+		con.close();//s5
+		return a;
+		
+	}
 }

@@ -35,3 +35,17 @@ May 16, 2023 17:47:27.25 [5760:2252:0516/174727.256:ERROR:registration_request.c
 May 16, 2023 17:47:29.97 [5760:2252:0516/174729.972:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
 May 16, 2023 17:47:42.54 [5760:2252:0516/174742.546:ERROR:registration_request.cc(251)] Registration URL fetching failed.
 May 16, 2023 17:49:45.78 [5760:2252:0516/174945.781:ERROR:registration_request.cc(251)] Registration URL fetching failed.
+
+May 17, 2023 17:53:09.89 NEW SESSION
+May 17, 2023 17:53:09.89 [2272:5904:0517/175309.889:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 17:53:30.84 [2272:5904:0517/175330.842:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 17:53:39.82 [2272:4148:0517/175339.826:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+May 17, 2023 17:53:40.11 [2272:4148:0517/175340.118:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+May 17, 2023 17:54:20.19 [2272:5904:0517/175420.194:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 17:56:14.03 [2272:5904:0517/175614.037:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 17:59:33.78 [2272:5904:0517/175933.780:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 18:06:44.85 [2272:5904:0517/180644.852:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 18:16:44.85 [2272:5904:0517/181644.856:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 19:04:30.20 [2272:5904:0517/190430.201:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 19:04:54.61 [2272:5904:0517/190454.612:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+May 17, 2023 19:05:46.21 [2272:5904:0517/190546.212:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106

@@ -24,11 +24,19 @@ public class ShowServ extends HttpServlet {
 		out.print("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>");
 		out.print("<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>");
 		out.print("<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>");
-		  
+		out.print("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>");
 		out.print("<div style='padding:20px 60px 30px 60px'>");
 		out.print("<center><H2>All User Data</H2></center>");
 		
-		
+		int pageId=Integer.parseInt(request.getParameter("page"));
+		int total=5;
+		int pId =pageId;
+		if(pId==1){}
+		else
+		{
+			pId-=1;
+			pId=pId*total+1;
+		}
 		UserDao db=new UserDao();
 		
 		
@@ -47,8 +55,8 @@ public class ShowServ extends HttpServlet {
 		out.print("    <tbody>");
 		
 		try {
-			ArrayList<User> ul=db.getAllUser();
-			
+			//ArrayList<User> ul=db.getAllUser();
+			ArrayList<User> ul=db.getLimitedUser(pId,total);
 			for(User u:ul)
 			{
 			//out.print(u+"<br/>");
@@ -61,7 +69,7 @@ public class ShowServ extends HttpServlet {
 				out.print("<td>"+u.getMob()+"</td>");
 				//out.print("<td>"+u.getUpass()+"</td>");
 				out.print("<td>"+u.getGender()+"</td>");
-				out.print("<td><a href='#' class='btn btn-primary'>Edit</a> &nbsp;&nbsp;&nbsp; <a href='#' class='btn btn-danger'>Delete</a></td>");
+				out.print("<td><a href='#' ><i class='fa fa-gear fa-spin' style='font-size:36px;color:#4c53e8c2'></i></a> &nbsp;&nbsp;&nbsp; <a href='delete?uid="+u.getUid()+"&pid="+pageId+"' class='btn btn-danger'>Delete</a></td>");
 				out.print("</tr>");
 			}
 			
@@ -72,19 +80,35 @@ public class ShowServ extends HttpServlet {
 		}
 		
 		
-		
-		
-		
+	
 		out.print("    </tbody>");
 		out.print("</table>");
 		
 		out.print("<center>");
 		out.print("<ul class='pagination'>");
-		out.print("  <li><a href='#'>1</a></li>");
-		out.print("  <li class='active'><a href='#'>2</a></li>");
-		out.print("  <li><a href='#'>3</a></li>");
-		out.print("  <li><a href='#'>4</a></li>");
-		out.print("  <li><a href='#'>5</a></li>");
+		
+		out.print("<li ");
+		if(pageId==1)
+		out.print("class='active'");		
+		out.print("><a href='show?page=1'>1</a></li>");
+		
+		
+		out.print("<li ");
+		if(pageId==2)
+		out.print("class='active'");
+		out.print("><a href='show?page=2'>2</a></li>");
+		
+		out.print("<li ");
+		if(pageId==3)
+		out.print("class='active'");
+		out.print("><a href='show?page=3'>3</a></li>");
+		
+		
+		out.print("<li ");
+		if(pageId==4)
+		out.print("class='active'");
+		out.print("><a href='show?page=4'>4</a></li>");
+		
 		out.print("</ul>");
 		out.print("</center>");
 		out.print("</div>");
