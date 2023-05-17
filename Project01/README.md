@@ -10,12 +10,13 @@ The project is still a work in progress:
 - [x] Create User Register_page
 - [x] Integrate the MySQL database into the project
 - [x] No duplicates email to be registered
-- [ ] Create the login page with authentication
-- [ ] Create the menu page
-- [ ] Create the manager's pages
-- [ ] Create the 'new sale' page
-- [ ] Create the 'search sale' page
-- [ ] Create settings int the menu for the user to tweak
+- [x] Create the login page with authentication
+- [x] Create the show page
+- [x] Create the html Table and show registered user record
+- [x] Create the action column for Edit and Delete Record
+- [x] Create the Delete Page
+- [ ] Create the Edit Page (Home Work)
+- [x] Create the Pagination
 
 ---
 
